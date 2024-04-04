@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(14, 14, 75);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            border: 2px solid rgb(0, 0, 0);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: red;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        #element {
+            color: red;
+        }
+
+        /* First Section  */
+        .first {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .first>div {
+            width: 30%;
+        }
+
+        .purple {
+            color: rgb(255, 0, 0);
+        }
+
+        .leftsec {
+            font-size: 2.5rem;
+            margin: 30px 0px;
+        }
+
+        .rightsec img {
+            width: 80%;
+            height: 75%;
+            /* margin: 20px 0px; */
+        }
+
+        main hr {
+            border: 0px;
+            background: black;
+            height: 2px;
+            margin: 15px;
+        }
+
+        /* Second Section */
+        .second {
+            max-width: 80vw;
+            margin: auto;
+            height: 400px;
+        }
+
+        .second h1 {
+            font-size: 2rem;
+        }
+
+        .gray {
+            font-size: 1em;
+            color: gray;
+        }
+
+        .second .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 50px 0px;
+            display: flex;
+        }
+
+        .second .vertical {
+            height: 60px;
+            width: 1px;
+            background-color: white;
+            margin: 0px 131px;
+        }
+        .vertical img{
+            height: 100px;
+            width: 100px;
+            object-fit: contain;
+            margin:70px -50px;
+        }
+        .text{
+            display: flex;
+            margin:190px 0px;
+        }
+        .vertical-text{
+            margin:0px 105px;
+        }
+        /* Third Section */
+        .third h1{
+            font-size: 2rem;
+            margin:0px 120px;
+        }
+        .third .gray{
+            margin:0px 120px;
+        }
+        .information{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin:10px 0px;
+        }
+        .image{
+            width: 30%;
+        }
+        .image img{
+            width: 100%;
+
+        }
+        .txt{
+            width: 60%;
+        }
+        /* Fourth Section */
+        .fourth h1{
+            font-size: 2rem;
+            margin:0px 120px;
+        }
+        .fourth span{
+            margin: 0px 120px;
+        }
+        .project{
+            display: flex;
+        }
+        .project img
+        {
+            height:120px;
+            width: 120px;
+            margin: 30px 100px;
+        }
+        .project p{
+            margin: 50px -50px;
+        }
+        .fourth hr{
+            border: 0px;
+            background:rgb(255, 255, 255);
+            width:80%;
+            height: 2px;
+            margin: 0px 100px;
+        }
+        /* Fifth Section */
+        .fifth h1{
+            font-size: 2rem;
+            margin:0px 120px;
+        }
+        .fifth span{
+            margin: 0px 120px;
+        }
+        .fifth .contact{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .contact .image{
+            width: 20%;
+        }
+        .contact .txt{
+            width: 50%;
+        }
+        .txt span{
+            display: block;
+            color: red;
+            margin: 5px 0px;
+        }
+        .txt img{
+            height: 25px;
+            width: 25px;
+            object-fit: contain;
+            margin: 2px 0px;
+        }
+        .fifth .download{
+            margin: 0px 563px;
+        }
+        .download button{
+            border-radius: 6px;
+            margin: 0px 5px;
+            height: 30px;
+            width: 70px;
+            font-size: 1rem;
+            background-color:rgb(82, 82, 209) ;
+            color: white;
+        }
+        .download a{
+            text-decoration: none;
+            color: white;
+        }
+        /* Footer Styling */
+        .foot{
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            margin-top: -18px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Rushabh Udani's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="landing.html">Home</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#About">About Me</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftsec">
+                Hi, my name is <span class="purple">Rushabh</span>
+                <div>& I am a</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsec">
+                <img src="Web_Developer.png">
+            </div>
+        </section>
+        <hr>
+        <section class="second" id="Skills">
+            <h1>Skills</h1>
+            <span class="gray">Skills I have learnt So Far</span>
+            <div class="box">
+                <div class="vertical">
+                    <img src="C++.png">        
+                </div>
+                <div class="vertical">
+                    <img src="Python.png">
+                </div>
+                <div class="vertical">
+                    <img src="Js.png">
+                </div>
+                <div class="vertical">
+                    <img src="SQL.png">
+                </div>
+            </div>
+            <div class="text">
+            <div class="vertical-text">C++</div>
+            <div class="vertical-text">Python</div>
+            <div class="vertical-text">HTML,CSS,JS</div>
+            <div class="vertical-text">SQL</div>
+            </div>
+        </section>
+        <hr>
+        <section class="third">
+            <h1 id="About">About Me</h1>
+            <span class="gray">A bit about Myself</span>
+            <div class="information " >
+            <div class="image"><img src="IMG_2945.jpeg" alt=""></div>
+            <div class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sint. Suscipit eum tempora ducimus pariatur minima molestias reiciendis cumque culpa quibusdam consequatur, cum neque perferendis porro fugiat. Id eligendi delectus quos voluptatum cupiditate, harum deserunt animi praesentium, nam alias, quaerat nihil quasi. Placeat repudiandae veniam quasi, reiciendis iusto dicta deleniti, necessitatibus aspernatur nemo ab animi tenetur in accusamus unde perspiciatis ratione sint fugiat cupiditate ut numquam. Non eius nostrum nihil obcaecati amet ipsum consequuntur voluptatem mollitia sapiente quibusdam veritatis pariatur unde commodi quam dolores, odit quae odio tempore exercitationem, placeat sunt iusto ducimus nam? Pariatur id reiciendis consectetur expedita accusantium cum quia atque aliquam, nostrum sequi, voluptatum quidem alias nam, iusto quasi delectus nemo eveniet harum eligendi voluptas explicabo possimus fugiat nesciunt! Adipisci dolorem dicta magnam consequuntur explicabo sed! Eum beatae, ipsam, perferendis temporibus autem praesentium ut nesciunt tempora quam rem voluptates nam repellendus? Labore quisquam sequi cum quidem eius, nostrum magnam fugiat quo nisi dolores cupiditate doloremque non earum deserunt, ullam nam velit perspiciatis repellendus eligendi fugit in rem soluta incidunt placeat? Ducimus quas natus beatae vero deserunt sit qui, veritatis dolores, numquam odio nam. Tenetur minima ducimus nemo delectus quod doloremque itaque sunt, voluptatem, iste quisquam saepe necessitatibus.</div>
+        </div>
+        </section>
+        <hr>
+        <section class="fourth">
+            <h1 id="Projects">Projects</h1>
+            <span class="gray">Projects I've developed so far...</span>
+            <div class="project" >
+                <img src="Streamline.png">
+                <p>Streamline is a website made for students who would like to enquire and gather information regarding their future studies, career prospects and job opportunities.</p>
+            </div>
+            <hr>
+            <div class="project">
+                <img src="f3b7f09fa308467b801ab00270b56f37.png" alt="">
+                <p>Tastebuds is an online food ordering & delivery system which can be used to order food from restaurants, cloud kitchens and hawkers too.</p>
+            </div>
+            <hr>
+            <div class="project">
+                <img src="Portfolio.jpg" alt="">
+                <p>Using HTML,CSS & JS I've created my portfolio which potrays my skills, experiences, projects that I've created etc.</p>
+            </div>
+        </section>
+        <hr>
+        <section class="fifth">
+            <h1 id="Contact">Contact Details</h1>
+            <span class="gray">To get in touch with me</span>
+            <div class="contact">
+                <div class="image">
+                    <img src="568093.png" alt="">
+                </div>
+                <div class="txt">
+                    <img src="4202011_email_gmail_mail_logo_social_icon.png" alt="">
+                    Email-Id:
+                    <span>rushabh_udani_comp@moderncoe.edu.in</span>
+                    <img src="phone.png" alt="">
+                    Mobile No:
+                    <span>9834231860</span>
+                    <img src="1738777.png" alt="">
+                    Instagram:
+                    <span>udani_fit</span>
+                    <img src="4571733.png" alt="">
+                    Snapchat:
+                    <span>rushabhudani012</span>
+                </div>
+            </div>
+            <div class="download">
+                <button><a href="">Resume</a></button>
+                <button><a href="https://github.com/rushabhudani?tab=repositories">Github</a></button>
+            </div>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <div class="foot">
+            Copyright &copy; All Rights Reserved.
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Video Editor', 'Graphic Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
